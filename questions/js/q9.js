@@ -1,6 +1,6 @@
 $("#submitStudBtn").click(function () {
     var answer = document.getElementById("answer").value.toString().toLowerCase();
-    var result = answer.includes("10");
+    var result = answer.includes("9");
     if (result == true) {
         window.location.href = "tenth.html";
     }
