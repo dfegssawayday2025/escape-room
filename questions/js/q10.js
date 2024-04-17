@@ -3,6 +3,7 @@ $("#submitStudBtn").click(function () {
     var result = answer.includes("10") || answer.includes("10.10");
     if (result == true) {
         M.toast({ html: 'Wooooooooo!!!' });
+        window.location.href = "end.html";
     }
     else if (answer === "") {
         M.toast({ html: 'Answer cannot be empty' });
