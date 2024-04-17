@@ -2,7 +2,7 @@ $("#submitStudBtn").click(function () {
     var answer = document.getElementById("answer").value.toString().toLowerCase();
     var result = answer.includes("7") || answer.includes("seven");
     if (result == true) {
-        window.location.href = "q8.html";
+        window.location.href = "eigth.html";
     }
     else if (answer === "") {
         M.toast({ html: 'Answer cannot be empty' });
