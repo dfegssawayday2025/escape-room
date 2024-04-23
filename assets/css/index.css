@@ -419,3 +419,10 @@ header {
     text-decoration: underline;
     text-decoration-color: #000;
 }
+
+#toast-container {
+    min-width: 10%;
+    top: 3%;
+    right: 50%;
+    transform: translateX(50%) translateY(50%);
+}
