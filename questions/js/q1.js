@@ -1,6 +1,6 @@
 $("#submitStudBtn").click(function () {
     var answer = document.getElementById("answer").value.toString().toLowerCase();
-    var result = answer.includes("Look at CoP");
+    var result = answer.includes("1");
     if (result == true) {
         window.location.href = "second.html";
     }
