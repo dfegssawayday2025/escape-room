@@ -223,17 +223,9 @@ $(document).keypress(function (event) {
 
 
 $("#submit3all").click(function () {
-    var answer4 = document.getElementById("answer4").value.trim().toLowerCase();
-    var result = answer4.includes("3");
-    if (result == true) {
+    
         window.location.href = "seventh.html";
-    }
-    else if (answer4 === "") {
-        M.toast({ html: 'Answer cannot be empty' });
-    }
-    else {
-        M.toast({ html: 'Wrong answer, keep trying!' });
-    }
+
 });
 
 
