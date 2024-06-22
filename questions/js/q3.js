@@ -1,240 +1,115 @@
-function generateSuccessMessageData() {
-    return `
-    <div name="questionBox">
-    <div class="row mt-4">
-      <p> That was it! <b>Does the data make sense?</b> </p>
-      <p> You better double check </p>
-      <p> Open envelope X. </p>
-    </div>
-    <div class="row">
-      <div class="input-field col s12">
-        <input id="answer4" name="answer4" type="text" class="validate">
-        <label for="answer4">What was the outlier?</label>
-      </div>
-      <div class="center">
-        <button name="submit4" class="btn btn-puzzle z-depth-0 waves-effect mb-n4"
-                id="submit4" value="Submit">Submit</button>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col s12 center">
-        <span>CURRENT ANSWER = 4</span>
-      </div>
-    </div>
-  </div>`;
-}
 
-function generateSuccessMessageProcess() {
-    return `
-    <div name="questionBox">
-    <div class="row mt-4">
-        <p> That was it! <b>Does the process make sense?</b>
-        <p> You better double check </p>
-        <p> Open envelope X. </p>
-    </div>
-    <div class="row">
-      <div class="input-field col s12">
-        <input id="answer" name="answer" type="text" class="validate">
-        <label for="answer">Need to work out how we do this bit</label>
-      </div>
-      <div class="center">
-        <button name="submitStudBtn" class="btn btn-puzzle z-depth-0 waves-effect mb-n4"
-                id="submitStudBtn" value="Submit">Submit</button>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col s12 center">
-        <span>CURRENT ANSWER = 5</span>
-      </div>
-    </div>
-  </div>`;
-}
+const expandButton1 = document.getElementById('expandButton1');
+const expandableContent1 = document.querySelector('.expandable-content-data');
 
-function generateSuccessMessageStory() {
-    return `
-    <div name="questionBox">
-    <div class="row mt-4">
-        <p> That was it! <b>Does the story make sense?</b>
-        <p> You better double check </p>
-        <p> Open envelope X. </p>
-    </div>
-    <div class="row">
-      <div class="input-field col s12">
-        <input id="answer" name="answer" type="text" class="validate">
-        <label for="answer">Which graph can't be explained?</label>
-      </div>
-      <div class="center">
-        <button name="submitStudBtn" class="btn btn-puzzle z-depth-0 waves-effect mb-n4"
-                id="submitStudBtn" value="Submit">Submit</button>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col s12 center">
-        <span>CURRENT ANSWER = 6</span>
-      </div>
-    </div>
-  </div>`;
-}
+expandButton1.addEventListener('click', toggleExpansion1);
 
-function SuccesstoQ() {
-    return `
-    <div class="row mt-4">
-      <p> YAY </p>
-    </div>`;
+function toggleExpansion1() {
+  if (expandableContent1.style.display === 'none') {
+    expandableContent1.classList.add('show'); // Add 'show' class for animation
+    expandableContent1.style.display = 'block'; // Show the content
+    expandButton1.style.display = 'none'; // Hide the button
+  } else {
+    expandableContent1.classList.remove('show'); // Remove 'show' class to stop animation
+    expandableContent1.style.display = 'none'; // Hide the content
+    expandButton1.style.display = 'block'; // Show the button again (optional)
+  }
 }
 
 
-$("#submit31").click(function () {
-    var answer1 = document.getElementById("answer1").value.trim().toLowerCase();
-    var result = "Data".toLowerCase(), result2 = "Bananas".toLowerCase();
 
-    var answerContainer = document.getElementById("answer-result-1");
-    answerContainer.innerHTML = ""; // Clear previous content
+const expandButton2 = document.getElementById('expandButton2');
+const expandableContent2 = document.querySelector('.expandable-content-process');
+
+expandButton2.addEventListener('click', toggleExpansion2);
+
+function toggleExpansion2() {
+  if (expandableContent2.style.display === 'none') {
+    expandableContent2.classList.add('show'); // Add 'show' class for animation
+    expandableContent2.style.display = 'block'; // Show the content
+    expandButton2.style.display = 'none'; // Hide the button
+  } else {
+    expandableContent2.classList.remove('show'); // Remove 'show' class to stop animation
+    expandableContent2.style.display = 'none'; // Hide the content
+    expandButton2.style.display = 'block'; // Show the button again (optional)
+  }
+}
+
+const expandButton3 = document.getElementById('expandButton3');
+const expandableContent3 = document.querySelector('.expandable-content-story');
+
+expandButton3.addEventListener('click', toggleExpansion3);
+
+function toggleExpansion3() {
+  if (expandableContent3.style.display === 'none') {
+    expandableContent3.classList.add('show'); // Add 'show' class for animation
+    expandableContent3.style.display = 'block'; // Show the content
+    expandButton3.style.display = 'none'; // Hide the button
+  } else {
+    expandableContent3.classList.remove('show'); // Remove 'show' class to stop animation
+    expandableContent3.style.display = 'none'; // Hide the content
+    expandButton3.style.display = 'block'; // Show the button again (optional)
+  }
+}
+
+
+
+
+
+const field1 = document.getElementById('field1')
+const field2 = document.getElementById('field2')
+const field3 = document.getElementById('field3')
+const checkBtn1 = document.getElementById('checkBtn1');
+const checkBtn2 = document.getElementById('checkBtn2');
+const checkBtn3 = document.getElementById('checkBtn3');
+const submitBtn = document.getElementById('submitBtn');
+const errorMessage = document.getElementById('errorMessage');
+
+let field1Valid = false;
+let field2Valid = false;
+let field3Valid = false;
+
+// Event listeners for check buttons
+checkBtn1.addEventListener('click', () => validateField(field1));
+checkBtn2.addEventListener('click', () => validateField(field2));
+checkBtn3.addEventListener('click', () => validateField(field3));
+
+// Function to validate individual fields
+function validateField(field) {
+    errorMessage.textContent = ''; // Clear any previous error message
   
-    if (answer1 === result2 || answer1 === result) {
-       
-      answerContainer.innerHTML = generateSuccessMessageData()
-      answerContainer.classList.remove("hidden"); // Show the container
-
-    } else if (answer1 === "") {
-      M.toast({ html: 'Answer cannot be empty' });
-    } else {
-      M.toast({ html: 'Wrong answer, keep trying!' });
-    }
-  })
-
-$("#submit32").click(function () {
-    var answer2 = document.getElementById("answer2").value.trim().toLowerCase();
-    var result = "Process".toLowerCase(), result2 = "Bananas".toLowerCase();
-
-    var answerContainer = document.getElementById("answer-result-2");
-    answerContainer.innerHTML = ""; // Clear previous content
+    const expectedValue = {
+      field1: "one",
+      field2: "error in code",
+      field3: "marathon meltdown"
+    }[field.id]; // Access value using field ID as a property key
   
-    if (answer2 === result2 || answer2 === result) {
-       
-      answerContainer.innerHTML = generateSuccessMessageProcess()
-      answerContainer.classList.remove("hidden"); // Show the container
+    // Convert both user input and expected value to lowercase for case-insensitive comparison
+    const lowerCaseInput = field.value.toLowerCase();
+    const lowerCaseExpectedValue = expectedValue.toLowerCase();
 
-    } else if (answer2 === "") {
-      M.toast({ html: 'Answer cannot be empty' });
-    } else {
-      M.toast({ html: 'Wrong answer, keep trying!' });
+
+    if (lowerCaseInput !== lowerCaseExpectedValue) {
+      errorMessage.textContent = `Incorrect value for field ${field.id.slice(5)}.`;
+      return; // Exit the function if validation fails
     }
-});
-
-$("#submit33").click(function () {
-    var answer3 = document.getElementById("answer3").value.trim().toLowerCase();
-    var result = "Story".toLowerCase(), result2 = "Bananas".toLowerCase();
-
-    var answerContainer = document.getElementById("answer-result-3");
-    answerContainer.innerHTML = ""; // Clear previous content
-  
-    if (answer3 === result2 || answer3 === result) {
-       
-      answerContainer.innerHTML = generateSuccessMessageStory()
-      answerContainer.classList.remove("hidden"); // Show the container
-
-    } else if (answer3 === "") {
-      M.toast({ html: 'Answer cannot be empty' });
-    } else {
-      M.toast({ html: 'Wrong answer, keep trying!' });
-    }
-});
-
-
-$(document).keypress(function (event) {
-    var keycode = (event.keyCode ? event.keyCode : event.which);
-    if (keycode == '13') {
-        $("#submit31").trigger('click');
-    }
-});
-
-$(document).keypress(function (event) {
-    var keycode = (event.keyCode ? event.keyCode : event.which);
-    if (keycode == '13') {
-        $("#submit32").trigger('click');
-    }
-});
-
-$(document).keypress(function (event) {
-    var keycode = (event.keyCode ? event.keyCode : event.which);
-    if (keycode == '13') {
-        $("#submit33").trigger('click');
-    }
-});
-
-
-
-$("#submit4").click(function () {
-    var answer = document.getElementById("answer4").value.toString().toLowerCase();
-    var result = answer.includes("4") || answer.includes("4.4");
-    
-    var answerContainer = document.getElementById("answer-result-4");
-    answerContainer.innerHTML = ""; // Clear previous content
-    
-    if (result == true) {
-        answerContainer.innerHTML = "Success" // SuccesstoQ()
-        answerContainer.classList.remove("hidden"); // Show the container
-    }
-    else if (answer === "") {
-        M.toast({ html: 'Answer cannot be empty' });
-    }
-    else {
-        M.toast({ html: 'Wrong answer, keep trying!' });
-    }
-});
-
-$(document).keypress(function (event) {
-    var keycode = (event.keyCode ? event.keyCode : event.which);
-    if (keycode == '13') {
-        $("#submit4").trigger('click');
-    }
-});
-
-
-$("#submit34").click(function () {
-    var answer4 = document.getElementById("answer4").value.trim().toLowerCase();
-    var result = "hello".toLowerCase(); // convert to lowercase
-    var result2 = "bananas".toLowerCase(); // convert to lowercase
-
-    var answerContainer = document.getElementById("answer-result-4");
-    answerContainer.innerHTML = ""; // Clear previous content
- 
-    if (answer4.toLowerCase() === result || answer4.toLowerCase() === result2) {
-
-        answerContainer.innerHTML = "Success" // SuccesstoQ()
-        answerContainer.classList.remove("hidden"); // Show the container
       
-    } else if (answer4 === "") {
-      M.toast({ html: 'Answer cannot be empty' });
-    } else {
-      M.toast({ html: 'Wrong answer, keep trying!' });
-    }
-});
+
+    // Update validation status for the specific field
+    if (field === field1) {
+        field1Valid = true;
+        document.getElementById('tick1').classList.remove('hidden'); // Show tick icon for field1
+      } else if (field === field2) {
+        field2Valid = true;
+        document.getElementById('tick2').classList.remove('hidden'); // Show tick icon for field2
+      } else {
+        field3Valid = true;
+        document.getElementById('tick3').classList.remove('hidden'); // Show tick icon for field3
+      }
+
+  // Check if all fields are valid and display/hide hidden div
+  const hiddenPipelineDiv = document.getElementById('hiddenPipelineDiv'); // Replace with actual ID of your hidden div
+  hiddenPipelineDiv.style.display = field1Valid && field2Valid && field3Valid ? 'block' : 'none';
+}
 
 
-
-$(document).keypress(function (event) {
-    var keycode = (event.keyCode ? event.keyCode : event.which);
-    if (keycode == '13') {
-        $("#submit34").trigger('click');
-    }
-});
-
-
-$("#submit3all").click(function () {
-    
-        window.location.href = "seventh.html";
-
-});
-
-
-
-
-
-$(document).keypress(function (event) {
-    var keycode = (event.keyCode ? event.keyCode : event.which);
-    if (keycode == '13') {
-        $("#submit3all").trigger('click');
-    }
-});

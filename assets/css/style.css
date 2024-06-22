@@ -1,0 +1,118 @@
+body {
+    font-family: sans-serif;
+    background-color: lightblue;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  h1 {
+    margin: 0;
+    text-align: center;
+  }
+  
+  .page-image {
+    width: 200px;
+    height: auto;
+  }
+  
+  main {
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    margin: 10px;
+  }
+  
+  .btn {
+    padding: 10px 20px;
+    background-color: #4CAF50; /* Green */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #f0f0f0;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  
+  .card {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow effect */
+    padding: 20px;
+    margin: 10px;
+    width: 90%; /* Adjust width as needed */
+  }
+  
+  .card img {
+    width: 100%; /* Make image fit the card width */
+    /* Adjust height if needed */
+  }
+  
+  h2 {
+    margin-top: 0; /* Remove top margin for title */
+  }
+
+
+  .speech-card {
+    display: flex; /* Enable flexbox layout */
+    border: 5px solid blue; /* Example: Green border for special card */
+    width: 90%; /* Adjust width as needed */
+    border-radius: 50px;
+  }
+  
+  .card-image {
+    flex: 0 0 200px; /* Fixed width for image */
+    padding: 1px; /* Add padding around the image */
+    transform: scale(0.8);
+  }
+  
+  .card-text {
+    flex: 1; /* Text fills remaining space */
+    padding: 10px;
+  }
+
+  .hidden {
+    display: none; /* Initially hide the tick icon */
+  }
+
+  .expandable-content-data, .expandable-content-process, .expandable-content-story {
+    display: none;
+    border: 1px solid grey; /* Add the border styles here */
+    opacity: 0.8; /* Slightly transparent when hidden */
+  }
+
+  .expandable-content-data.show, .expandable-content-process.show, .expandable-content-story.show {
+    animation: expand-content 1s ease-in-out forwards;
+  }
+  
+  @keyframes expand-content {
+    from {
+      transform: scale(0.8, 0); /* Start shrunken vertically */
+      opacity: 0.8;
+    }
+    to {
+      transform: scale(1, 1); /* Expand to full size */
+      opacity: 1;
+    }
+  }
+
+  .hiddenPipelineDiv {
+    display: none; /* Initially hide the pipeline div */
+  }
