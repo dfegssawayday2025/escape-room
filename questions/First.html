@@ -7,11 +7,11 @@
     <meta http-equiv='cache-control' content='no-cache'>
     <meta http-equiv='expires' content='0'>
     <meta http-equiv='pragma' content='no-cache'>
-    <meta name="viewport"
-        content="width=device-width, initial-scale=.5, maximum-scale=12.0, minimum-scale=.25, user-scalable=yes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- style sheet -->
-    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/style.css" media="all">
+
 
     <title>My Website Title</title>
 
@@ -26,15 +26,16 @@
 
     <!-- Main Content -->
 
-    <div class="card speech-card">
-        <div class="card-image">
+    <div class="card speech-card flex-container">
+        <div class="card-image image-container">
             <img src="../assets/img/happy.png" alt="Image Description">
         </div>
         <div class="card-text">
-            <p>Let's get started! How about we quickly refresh on the important parts of the code of practice? I left it
-                around here somewhere open <span class="action-highlight">envelope X</span>, though it definitely wasn't me that spilled the coffee on
-                it...</p>
-
+            <p>Let's get started! </p>
+            <p>How about we quickly refresh on the important parts of the code of practice? I left it
+                around here somewhere...</p>
+            <p>Open <span class="action-highlight">envelope X</span></p>
+            <p>It definitely wasn't me that spilled the coffee on it...</p>
         </div>
     </div>
 
@@ -43,33 +44,36 @@
         <p>(Remember to hit check on each line)</p>
 
         <form id="myForm">
-
-            <label for="field1">6 letters:</label>
-            <input type="text" id="field1" name="field1" required>
-            <button type="button" id="checkBtn1">Check</button>
-            <span id="tick1" class="hidden">&#10004;</span>
-            <br><br>
-
-            <label for="field2">11 letters:</label>
-            <input type="text" id="field2" name="field2" required>
-            <button type="button" id="checkBtn2">Check</button>
-            <span id="tick2" class="hidden">&#10004;</span>
-            <br><br>
-
-            <label for="field3">8 letters:</label>
-            <input type="text" id="field3" name="field3" required>
-            <button type="button" id="checkBtn3">Check</button>
-            <span id="tick3" class="hidden">&#10004;</span>
-            <br><br>
-
-            <label for="field4">11 letters:</label>
-            <input type="text" id="field4" name="field4" required>
-            <button type="button" id="checkBtn4">Check</button>
-            <span id="tick4" class="hidden">&#10004;</span>
-            <br><br>
-
+            <div class="form-group">
+              <label for="field1">6 letters:</label>
+              <input type="text" class="input-field" id="field1" name="field1" required>
+              <button type="button" class="btn" id="checkBtn1">Check</button>
+              <span id="tick1" class="hidden">&#10004;</span>
+            </div>
+          
+            <div class="form-group">
+              <label for="field2">11 letters:</label>
+              <input type="text" class="input-field" id="field2" name="field2" required>
+              <button type="button" class="btn" id="checkBtn2">Check</button>
+              <span id="tick2" class="hidden">&#10004;</span>
+            </div>
+          
+            <div class="form-group">
+              <label for="field3">8 letters:</label>
+              <input type="text" class="input-field" id="field3" name="field3" required>
+              <button type="button" class="btn" id="checkBtn3">Check</button>
+              <span id="tick3" class="hidden">&#10004;</span>
+            </div>
+          
+            <div class="form-group">
+              <label for="field4">11 letters:</label>
+              <input type="text" class="input-field" id="field4" name="field4" required>
+              <button type="button" class="btn" id="checkBtn4">Check</button>
+              <span id="tick4" class="hidden">&#10004;</span>
+            </div>
+          
             <button type="submit" id="submitBtn" disabled>Next</button>
-        </form>
+          </form>
 
         <p id="errorMessage"></p>
 
@@ -77,8 +81,8 @@
 
     <br>
 
-    <div class="card" style = "border: 5px solid red;">
-        <p>Delete this before launch, but for testing purposes: answers 
+    <div class="card" style="border: 5px solid red;">
+        <p>Delete this before launch, but for testing purposes: answers
             are Public, limitations, suitable, uncertainty</p>
     </div>
 

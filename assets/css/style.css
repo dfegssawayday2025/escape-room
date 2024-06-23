@@ -31,13 +31,24 @@ body {
   }
   
   .btn {
-    padding: 10px 20px;
+    padding: 10px;
     background-color: #4CAF50; /* Green */
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     text-decoration: none;
+  }
+
+  .button {
+    background-color: #4c04aa; /* Green */
+    border: none;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
   }
   
   footer {
@@ -75,12 +86,13 @@ body {
     border: 5px solid blue; /* Example: Green border for special card */
     width: 90%; /* Adjust width as needed */
     border-radius: 50px;
+    max-height: 200px; /* Adjust the value as needed */ /* Increased for example */
   }
   
   .card-image {
-    flex: 0 0 200px; /* Fixed width for image */
+    flex: 0 0 30%; /* Set width to 30% of parent container */
     padding: 1px; /* Add padding around the image */
-    transform: scale(0.8);
+    max-height: 100%; /* Scale image to fit card height */
   }
   
   .card-text {
@@ -144,3 +156,32 @@ body {
     font-weight: bold;
     color: rgb(4, 194, 4);
   }
+
+
+
+  .form-group {
+    display: grid;
+    grid-template-columns: 1fr auto auto; /* Defines three columns */
+    grid-gap: 10px; /* Add some spacing between elements */
+    margin-bottom: 1rem; /* Add some spacing between questions */
+    margin-right:30%
+  }
+
+  label {
+    margin-right: 1rem; 
+  }
+
+  .input-field {
+    margin-right: 1rem;
+  }
+
+
+  .flex-container {
+    display: flex; /* Enable flexbox layout */
+  }
+  
+  .image-container {
+    flex: 0 0 20%; /* Set width to 30% of parent container */
+    max-height: 100%; /* Adjust the value as needed */
+  }
+
