@@ -94,7 +94,7 @@ h2 {
 .speech-card {
     display: flex;
     /* Enable flexbox layout */
-    border: 5px solid blue;
+    border: 2px solid black;
     /* Example: Green border for special card */
     width: auto;
     /* Adjust width as needed */
@@ -107,14 +107,13 @@ h2 {
     /* Set width to 30% of parent container */
     padding: 1px;
     /* Add padding around the image */
-    max-height: 100%;
-    /* Scale image to fit card height */
-}
+    width: 100%; /* Image scales proportionally */
+  }
 
 .card-text {
     flex: 1;
     /* Text fills remaining space */
-    padding: 1px;
+    padding: 5px;
 }
 
 .hidden {
@@ -155,6 +154,7 @@ h2 {
 .hidden {
     display: none
 }
+
 .hiddenPipelineDiv {
     display: none;
     /* Initially hide the pipeline div */
@@ -198,10 +198,9 @@ h2 {
 }
 
 
-
 .form-group {
     display: grid;
-    grid-template-columns: 1fr auto auto;
+    grid-template-columns: 1fr auto auto auto;
     /* Defines three columns */
     grid-gap: 10px;
     /* Add some spacing between elements */
@@ -232,3 +231,8 @@ label {
     /* Adjust the value as needed */
 }
 
+.email-container {
+    /* Existing styles... */
+    max-width: 700px; /* Adjust as needed */
+    margin: 0 auto; /* Center the container horizontally */
+  }
