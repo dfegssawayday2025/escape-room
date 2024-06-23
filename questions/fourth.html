@@ -32,13 +32,15 @@
         Lets just re-run our process and get these updated figures
         published...
         <br>
-        But oh no!! It looks like we've been a bit lazy with our documentation 
-        and need to piece this back together before we can go any further!
         <br>
-        Open [envelope X], we need run the pipeline and then I've lost the password for 
-        publishing, hopefully you can find it! 
+        Wait! It looks like we've been a bit lazy with our documentation 
+        and need to piece this back together, what a pain..
         <br>
-        (We should ask our Reproducible Analytical Pipeline (RAP) champion for help with 
+        Open <span class="action-highlight">envelope X</span>. We need run the pipeline and then I've lost the 
+        password for publishing, hopefully you can find it! 
+        <br>
+        <br>
+        (Lets ask our Reproducible Analytical Pipeline (RAP) champion for help with 
         improving our process for next time once this is out of the way too...)
         
      </div>
@@ -50,19 +52,23 @@
     <div class="card">
         
         <h2>What is the publishing password?</h2>
-        
-            <div class="input-field col s12">
-                <input id="answer" name="answer" type="text" class="validate">
-                
-            </div>
-            <br>
-            <div class="center">
-                <button name="submitStudBtn" class="btn btn-puzzle z-depth-0 waves-effect mb-n4"
-                    id="submitStudBtn" value="Submit">Submit</button>
-            </div>
-       
-        CURRENT ANSWER = 4
 
+        <form id="myForm">
+            <label for="myInput">Enter value:</label>
+            <input type="text" id="myInput" name="userInput" required>
+            <br>
+            <button type="submit">Submit</button>
+            <p id="errorMessage" style="display: none; color: red;"></p>
+        </form>
+
+
+
+    </div>
+
+
+    <div class="card" style="border: 5px solid red;">
+        <p>Delete this before launch, but for testing purposes: answer
+            is bananas</p>
     </div>
 
 

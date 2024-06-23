@@ -23,40 +23,41 @@ checkBtn4.addEventListener('click', () => validateField(field4));
 
 // Function to validate individual fields
 function validateField(field) {
-    errorMessage.textContent = ''; // Clear any previous error message
-  
-    const expectedValue = {
-      field1: "public",
-      field2: "limitations",
-      field3: "suitable",
-      field4: "uncertainty" 
-    }[field.id]; // Access value using field ID as a property key
-  
-    // Convert both user input and expected value to lowercase for case-insensitive comparison
-    const lowerCaseInput = field.value.toLowerCase();
-    const lowerCaseExpectedValue = expectedValue.toLowerCase();
+  errorMessage.textContent = ''; // Clear any previous error message
+
+  const expectedValue = {
+    field1: "public",
+    field2: "limitations",
+    field3: "suitable",
+    field4: "uncertainty"
+  }[field.id]; // Access value using field ID as a property key
+
+  // Convert both user input and expected value to lowercase for case-insensitive comparison
+  const lowerCaseInput = field.value.toLowerCase();
+  const lowerCaseExpectedValue = expectedValue.toLowerCase();
 
 
-    if (lowerCaseInput !== lowerCaseExpectedValue) {
-      errorMessage.textContent = `Incorrect value for field ${field.id.slice(5)}.`;
-      return; // Exit the function if validation fails
-    }
-      
+  if (lowerCaseInput !== lowerCaseExpectedValue) {
+    errorMessage.textContent = `Incorrect value for field ${field.id.slice(5)}.`;
+    return; // Exit the function if validation fails
+  }
 
-    // Update validation status for the specific field
-    if (field === field1) {
-        field1Valid = true;
-        document.getElementById('tick1').classList.remove('hidden'); // Show tick icon for field1
-      } else if (field === field2) {
-        field2Valid = true;
-        document.getElementById('tick2').classList.remove('hidden'); // Show tick icon for field2
-    } else if (field === field3) {
-        field3Valid = true;
-        document.getElementById('tick3').classList.remove('hidden'); // Show tick icon for field2
-      } else {
-        field4Valid = true;
-        document.getElementById('tick4').classList.remove('hidden'); // Show tick icon for field3
-      }
+
+  // Update validation status for the specific field
+  if (field === field1) {
+    field1Valid = true;
+    document.getElementById('tick1').classList.remove('hidden'); // Show tick icon for field1
+  } else if (field === field2) {
+    field2Valid = true;
+    document.getElementById('tick2').classList.remove('hidden'); // Show tick icon for field2
+  } else if (field === field3) {
+    field3Valid = true;
+    document.getElementById('tick3').classList.remove('hidden'); // Show tick icon for field3
+  } else if (field === field4) {
+    field4Valid = true;
+    document.getElementById('tick4').classList.remove('hidden'); // Show tick icon for field4
+  }
+
 
   // Check if all fields are valid and enable/disable submit button
   submitBtn.disabled = !(field1Valid && field2Valid && field3Valid && field4Valid);
@@ -64,15 +65,15 @@ function validateField(field) {
 
 // Event listener for submit button
 form.addEventListener('submit', (event) => {
-    event.preventDefault(); // Prevent default form submission
-  
-    // Your existing validation logic (unchanged)
-  
-    if (field1Valid && field2Valid && field3Valid && field4Valid) {
-      // Redirect to page 2 on successful validation
-      window.location.href = "second.html"; // Replace with the actual URL of your "page 2"
-    }
-  });
+  event.preventDefault(); // Prevent default form submission
+
+  // Your existing validation logic (unchanged)
+
+  if (field1Valid && field2Valid && field3Valid && field4Valid) {
+    // Redirect to page 2 on successful validation
+    window.location.href = "second.html"; // Replace with the actual URL of your "page 2"
+  }
+});
 
 
 

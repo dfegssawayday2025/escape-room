@@ -116,3 +116,31 @@ body {
   .hiddenPipelineDiv {
     display: none; /* Initially hide the pipeline div */
   }
+
+  .froyo-card:before {
+    content: "Subject: Sabotaging Ice Cream Figures!"; /* Content for the header */
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #666; /* Light gray for sender name */
+  }
+
+  .froyo-card {
+    /* Your email card styles here */
+    background-color: #f4fbff; /* Light gray background */
+    padding: 20px; /* Add padding for content */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+
+  .froyo-card p {
+    font-family: sans-serif; /* Choose a suitable font */
+    line-height: 1.5; /* Adjust line spacing for readability */
+    margin-bottom: 15px; /* Add spacing between paragraphs */
+    
+  }
+
+  .action-highlight {
+    font-weight: bold;
+    color: rgb(4, 194, 4);
+  }

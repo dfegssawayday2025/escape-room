@@ -1,3 +1,24 @@
+const form = document.getElementById('myForm');
+const inputField = document.getElementById('myInput');
+const errorMessage = document.getElementById('errorMessage');
+
+
+form.addEventListener('submit', (event) => {
+    event.preventDefault(); // Prevent default form submission
+  
+    const userInput = inputField.value.trim(); // Get user input and trim whitespace
+
+    if (userInput === 'bananas') { // Check if input is exactly "bananas"
+      window.location.href = "fifth.html"; // Redirect to next page
+    } else {
+      errorMessage.textContent = 'Incorrect input. Please enter correct password - "bananas".';
+      errorMessage.style.display = 'block'; // Show error message
+    }
+  });
+
+
+
+
 $("#submitStudBtn").click(function () {
     var answer = document.getElementById("answer").value.toString().toLowerCase();
     var result = answer.includes("4") || answer.includes("4.4");
