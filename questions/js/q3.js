@@ -79,7 +79,7 @@ function validateField(field) {
     errorMessage.textContent = ''; // Clear any previous error message
   
     const expectedValue = {
-      field1: "tirimisu",
+      field1: "tiramisu",
       field2: "error in code",
       field3: "marathon meltdown"
     }[field.id]; // Access value using field ID as a property key
