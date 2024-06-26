@@ -11,7 +11,7 @@ form.addEventListener('submit', (event) => {
     if (userInput === 'frozen') { // Check if input is exactly "bananas"
       window.location.href = "fifth.html"; // Redirect to next page
     } else {
-      errorMessage.textContent = 'Incorrect input. Please enter correct password - "bananas".';
+      errorMessage.textContent = 'Incorrect input. Please enter correct password.';
       errorMessage.style.display = 'block'; // Show error message
     }
   });
