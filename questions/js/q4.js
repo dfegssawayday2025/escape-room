@@ -8,7 +8,7 @@ form.addEventListener('submit', (event) => {
   
     const userInput = inputField.value.trim(); // Get user input and trim whitespace
 
-    if (userInput === 'bananas') { // Check if input is exactly "bananas"
+    if (userInput === 'frozen') { // Check if input is exactly "bananas"
       window.location.href = "fifth.html"; // Redirect to next page
     } else {
       errorMessage.textContent = 'Incorrect input. Please enter correct password - "bananas".';
