@@ -6,9 +6,9 @@ body {
 }
 
 p {
-    font-size: 1rem; /* Adjust as needed */
-  }
-  
+    font-size: 1rem;
+}
+
 header {
     padding: 20px;
     text-align: center;
@@ -37,7 +37,6 @@ main {
 .btn {
     padding: 10px;
     background-color: #4CAF50;
-    /* Green */
     color: white;
     border: none;
     border-radius: 5px;
@@ -47,7 +46,6 @@ main {
 
 .button {
     background-color: #4c04aa;
-    /* Green */
     border: none;
     color: white;
     padding: 5px;
@@ -67,58 +65,44 @@ img {
     width: 100%;
 }
 
-
 .card {
     background-color: #fff;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    /* Optional shadow effect */
     padding: 20px;
     margin: 10px;
     width: auto;
-    /* Adjust width as needed */
 }
 
 .card img {
     width: 100%;
-    /* Make image fit the card width */
-    /* Adjust height if needed */
 }
 
 h2 {
     margin-top: 0;
-    /* Remove top margin for title */
 }
-
 
 .speech-card {
     display: flex;
-    /* Enable flexbox layout */
     border: 2px solid black;
-    /* Example: Green border for special card */
     width: auto;
-    /* Adjust width as needed */
     border-radius: 50px;
-    align-items: center; /* Vertically center child elements */
+    align-items: center;
 }
 
 .card-image {
     flex: 0 0 30%;
-    /* Set width to 30% of parent container */
     padding: 1px;
-    /* Add padding around the image */
-    width: 100%; /* Image scales proportionally */
-  }
+    width: 100%;
+}
 
 .card-text {
     flex: 1;
-    /* Text fills remaining space */
     padding: 5px;
 }
 
 .hidden {
     display: none;
-    /* Initially hide the tick icon */
 }
 
 .expandable-content-data,
@@ -126,9 +110,7 @@ h2 {
 .expandable-content-story {
     display: none;
     border: 1px solid grey;
-    /* Add the border styles here */
     opacity: 0.8;
-    /* Slightly transparent when hidden */
 }
 
 .expandable-content-data.show,
@@ -140,13 +122,11 @@ h2 {
 @keyframes expand-content {
     from {
         transform: scale(0.8, 0);
-        /* Start shrunken vertically */
         opacity: 0.8;
     }
 
     to {
         transform: scale(1, 1);
-        /* Expand to full size */
         opacity: 1;
     }
 }
@@ -157,45 +137,31 @@ h2 {
 
 .hiddenPipelineDiv {
     display: none;
-    /* Initially hide the pipeline div */
 }
 
 .hiddenButtonDiv {
     display: none;
-    /* Initially hide the div */
 }
-
 
 .froyo-card:before {
     content: "Subject: Sabotaging Ice Cream Figures!";
-    /* Content for the header */
     display: block;
     margin-bottom: 10px;
     font-weight: bold;
     color: #666;
-    /* Light gray for sender name */
 }
 
 .froyo-card {
-    /* Your email card styles here */
     background-color: #f4fbff;
-    /* Light gray background */
     padding: 20px;
-    /* Add padding for content */
     border-radius: 5px;
-    /* Rounded corners */
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-    /* Subtle shadow */
 }
 
 .froyo-card p {
     font-family: sans-serif;
-    /* Choose a suitable font */
     line-height: 1.5;
-    /* Adjust line spacing for readability */
     margin-bottom: 15px;
-    /* Add spacing between paragraphs */
-
 }
 
 .action-highlight {
@@ -203,42 +169,32 @@ h2 {
     color: rgb(4, 194, 4);
 }
 
-
 .form-group {
     display: grid;
     grid-template-columns: 1fr auto auto auto;
-    /* Defines three columns */
     grid-gap: 10px;
-    /* Add some spacing between elements */
     margin-bottom: 1rem;
     width: auto
 }
 
 label {
-    /*margin-right: 1rem; */
     width: auto
 }
 
 .input-field {
-    /*margin-right: 1rem; */
     width: auto
 }
 
-
 .flex-container {
     display: flex;
-    /* Enable flexbox layout */
 }
 
 .image-container {
     flex: 0 0 20%;
-    /* Set width to 30% of parent container */
     max-height: 100%;
-    /* Adjust the value as needed */
 }
 
 .email-container {
-    /* Existing styles... */
-    max-width: 700px; /* Adjust as needed */
-    margin: 0 auto; /* Center the container horizontally */
-  }
+    max-width: 700px;
+    margin: 0 auto;
+}

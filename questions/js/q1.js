@@ -42,7 +42,6 @@ function validateField(field) {
     return; // Exit the function if validation fails
   }
 
-
   // Update validation status for the specific field
   if (field === field1) {
     field1Valid = true;
@@ -58,11 +57,8 @@ function validateField(field) {
     document.getElementById('tick4').classList.remove('hidden'); // Show tick icon for field4
   }
 
-
   // Check if all fields are valid and enable div 
-    const hiddenButtonDiv = document.getElementById('hiddenButtonDiv'); // Replace with actual ID of your hidden div
-    hiddenButtonDiv.style.display = field1Valid && field2Valid && field3Valid && field4Valid ? 'block' : 'none';
+  const hiddenButtonDiv = document.getElementById('hiddenButtonDiv'); 
+  hiddenButtonDiv.style.display = field1Valid && field2Valid && field3Valid && field4Valid ? 'block' : 'none';
 
-
- // submitBtn.disabled = !(field1Valid && field2Valid && field3Valid && field4Valid);
 }
