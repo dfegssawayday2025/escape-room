@@ -160,6 +160,12 @@ h2 {
     /* Initially hide the pipeline div */
 }
 
+.hiddenButtonDiv {
+    display: none;
+    /* Initially hide the div */
+}
+
+
 .froyo-card:before {
     content: "Subject: Sabotaging Ice Cream Figures!";
     /* Content for the header */

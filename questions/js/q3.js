@@ -84,9 +84,9 @@ function validateField(field) {
       field3: "marathon meltdown"
     }[field.id]; // Access value using field ID as a property key
   
-    // Convert both user input and expected value to lowercase for case-insensitive comparison
-    const lowerCaseInput = field.value.toLowerCase();
-    const lowerCaseExpectedValue = expectedValue.toLowerCase();
+    // Convert both user input and expected value to lowercase and trim any whitespace
+    const lowerCaseInput = field.value.toLowerCase().trim();
+    const lowerCaseExpectedValue = expectedValue.toLowerCase().trim();
 
 
     if (lowerCaseInput !== lowerCaseExpectedValue) {

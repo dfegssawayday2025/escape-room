@@ -6,17 +6,15 @@ const errorMessage = document.getElementById('errorMessage');
 form.addEventListener('submit', (event) => {
     event.preventDefault(); // Prevent default form submission
   
-    const userInput = inputField.value.trim(); // Get user input and trim whitespace
+    const userInput = inputField.value.trim().toLowerCase(); // Get user input and trim whitespace and force lower case
 
     if (userInput === 'frozen') { // Check if input is exactly "bananas"
-      window.location.href = "fifth.html"; // Redirect to next page
+      window.location.href = "publishing-success.html"; // Redirect to next page
     } else {
       errorMessage.textContent = 'Incorrect input. Please enter correct password.';
       errorMessage.style.display = 'block'; // Show error message
     }
   });
-
-
 
 
 $("#submitStudBtn").click(function () {

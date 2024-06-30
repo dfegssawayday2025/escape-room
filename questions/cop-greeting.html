@@ -12,7 +12,6 @@
     <!-- style sheet -->
     <link rel="stylesheet" href="../assets/css/style.css" media="all">
 
-
     <title>Statistics away day</title>
 
 </head>
@@ -34,13 +33,15 @@
             <p>Let's get started! </p>
             <p>How about we quickly refresh on the important parts of the code of practice? I left it
                 around here somewhere...</p>
-            <p>It definitely wasn't me that spilled the tea on it...</p>
+            <p>It definitely wasn't me that spilled the tea all over it...</p>
         </div>
     </div>
 
+    <br>
+
     <div class="card">
-        <h2>An easy one to start, what words are missing?</h2>
-        <p>(Remember to hit the check button on each line)</p>
+        <h2>An easy one to start, what words are we missing?</h2>
+        <p>(Remember to hit the check button on each line to confirm your answers)</p>
 
         <form id="myForm">
             <div class="form-group">
@@ -65,22 +66,32 @@
             </div>
           
             <div class="form-group">
-              <label for="field4">11 letters:</label>
+              <label for="field4">10 letters:</label>
               <input type="text" class="input-field" id="field4" name="field4" required>
               <button type="button" class="btn" id="checkBtn4">Check</button>
               <span id="tick4" style="color: #09f73c; font-size: 1.5em;" class="hidden">&#10004;</span>
             </div>
-          
-            <button type="submit" id="submitBtn" disabled>Next</button>
+                      
           </form>
-
-          <span style="color:#e41405; font-weight: bold;"><p id="errorMessage"></p></span>
 
     </div>
 
+    <span style="color:#e41405; font-weight: bold;"><p id="errorMessage"></p></span>
+
     <br>
 
-    <div class="card" style="border: 5px solid red;">
+    <div id=hiddenButtonDiv class="hiddenButtonDiv">
+        <div class="card speech-card flex-container">
+            <div class="card-image image-container">
+                <img src="../assets/img/happy.png" alt="Image Description">
+            </div>
+            <div class="card-text">
+                <p>Great work!! Lets move on to checking our data!</p>
+                <br>
+                <a href="../questions/quality-check.html" class="btn btn-puzzle z-depth-0 waves-effect">Investigate</a>
+            </div>
+        </div>
+    </div>
 
     <!-- Footer -->
     <img src="../assets/img/long-footer-colour.png" alt="Image Description">

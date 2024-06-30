@@ -29,12 +29,12 @@ function validateField(field) {
     field1: "public",
     field2: "limitations",
     field3: "suitable",
-    field4: "uncertainty"
+    field4: "comparable"
   }[field.id]; // Access value using field ID as a property key
 
-  // Convert both user input and expected value to lowercase for case-insensitive comparison
-  const lowerCaseInput = field.value.toLowerCase();
-  const lowerCaseExpectedValue = expectedValue.toLowerCase();
+  // Convert both user input and expected value to lowercase and trim whitespace
+  const lowerCaseInput = field.value.toLowerCase().trim();
+  const lowerCaseExpectedValue = expectedValue.toLowerCase().trim();
 
 
   if (lowerCaseInput !== lowerCaseExpectedValue) {
@@ -59,21 +59,10 @@ function validateField(field) {
   }
 
 
-  // Check if all fields are valid and enable/disable submit button
-  submitBtn.disabled = !(field1Valid && field2Valid && field3Valid && field4Valid);
+  // Check if all fields are valid and enable div 
+    const hiddenButtonDiv = document.getElementById('hiddenButtonDiv'); // Replace with actual ID of your hidden div
+    hiddenButtonDiv.style.display = field1Valid && field2Valid && field3Valid && field4Valid ? 'block' : 'none';
+
+
+ // submitBtn.disabled = !(field1Valid && field2Valid && field3Valid && field4Valid);
 }
-
-// Event listener for submit button
-form.addEventListener('submit', (event) => {
-  event.preventDefault(); // Prevent default form submission
-
-  // Your existing validation logic (unchanged)
-
-  if (field1Valid && field2Valid && field3Valid && field4Valid) {
-    // Redirect to page 2 on successful validation
-    window.location.href = "second.html"; // Replace with the actual URL of your "page 2"
-  }
-});
-
-
-
