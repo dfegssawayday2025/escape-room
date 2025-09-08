@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- prevent caching issue -->
+    <meta http-equiv='cache-control' content='no-cache'>
+    <meta http-equiv='expires' content='0'>
+    <meta http-equiv='pragma' content='no-cache'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- style sheet -->
+    <link rel="stylesheet" href="../assets/css/style.css" media="all">
+
+    <title>Statistics away day</title>
+
+</head>
+
+<body class="grey lighten-4">
+
+    <header>
+        <!-- <img src="assets/img/logo.png" alt="Website Logo"> -->
+        <h1>Statistics away day</h1>
+    </header>
+
+    <!-- Main Content -->
+    <div style="display: flex; justify-content: center !important; display:table-cell; vertical-align:middle; text-align:center" class="card speech-card flex-container">
+        <div class="card-image image-container">
+            <img src="../assets/img/Escape-Room/spaceship.png" alt="Image Description" class="center" width = "1000">
+        </div>
+	</div>
+	<br>
+	<div style="text-align:left; width:fit-content;" class="card speech-card flex-container">
+		<div class="card-image image-container">
+            <img src="../assets/img/Frederick/space-suit-frederick.png" alt="Image Description" width="200">
+        </div>
+        <div class="card-text">
+            <p>"But what is the space-ship called?</p>
+			<p>Let's see if we can find any clues in <span class="action-highlight">envelope 2</span>".</p>
+        </div>
+    </div>
+
+    <div class="card" style="width:fit-content;">
+        <h2>Which of the listed words does not appear in the Databricks wordsearch grid?</h2>
+		<p>The missing word is the name of the space ship.</p>
+		<p>Enter it below.</p>
+        <form id="myForm">
+            <div class="form-group">
+                <input type="text" class="input-field" id="field1" name="field1" required>
+                <button type="button" class="btn" id="checkBtn1">Check</button>
+                <span id="tick1" style="color: #09f73c; font-size: 1.5em;" class="hidden">&#10004;</span>
+            </div>
+
+        </form>
+
+    </div>
+
+    <span style="color:#e41405; font-weight: bold;">
+        <p id="errorMessage"></p>
+    </span>
+
+    <br>
+
+    <div id=hiddenButtonDiv1 class="hiddenButtonDiv">
+		
+		<div style="text-align:left; width:fit-content;" class="card speech-card flex-container">
+			<div class="card-image image-container">
+				<img src="../assets/img/Frederick/space-ship-frederick.png" alt="Image Description">
+			</div>
+			<div class="card-text">
+				<p>Now I've boarded I can finally look to get some tea.</p>
+				<br>
+				<a href="../questions/tea.html" class="btn btn-puzzle z-depth-0 waves-effect">Let's get tea.</a>
+			</div>
+		</div>
+    </div>
+
+    <!-- Footer -->
+    <img src="../assets/img/long-footer.png" alt="Image Description" width = 100%>
+
+    <!-- Scripts -->
+    <script src="js/departing.js"></script>
+</body>
+
+</html>

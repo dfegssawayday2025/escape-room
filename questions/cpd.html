@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- prevent caching issue -->
+    <meta http-equiv='cache-control' content='no-cache'>
+    <meta http-equiv='expires' content='0'>
+    <meta http-equiv='pragma' content='no-cache'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- style sheet -->
+    <link rel="stylesheet" href="../assets/css/style.css" media="all">
+
+    <title>Statistics away day</title>
+
+</head>
+
+<body class="grey lighten-4">
+
+    <header>
+        <!-- <img src="assets/img/logo.png" alt="Website Logo"> -->
+        <h1>Statistics away day</h1>
+    </header>
+
+    <!-- Main Content -->
+
+	<div style="text-align:left; width:fit-content;" class="card speech-card flex-container">
+		<div class="card-image image-container">
+            <img src="../assets/img/Frederick/frederick-towel.png" alt="Image Description" width="200">
+        </div>
+        <div class="card-text">
+            <p>"All this talk about L&D makes me think.</p>
+			<p>What are the statistics profession expectations on how much CPD I should be doing,</p>
+			<p>when I'm not whizzing around the galaxy?"</p>
+			<p>Maybe the answer is in <span class="action-highlight">envelope 5</span>".</p>
+        </div>
+    </div>
+
+    <div class="card" style="width:fit-content;">
+        <h2>What's the minimum CPD requirement in hours for statistics and data science?</h2>
+		<p>Crack the codes to find the answer and enter below.</p>
+        <form id="myForm">
+            <div class="form-group">
+                <input type="text" class="input-field" id="field1" name="field1" required>
+                <button type="button" class="btn" id="checkBtn1">Check</button>
+                <span id="tick1" style="color: #09f73c; font-size: 1.5em;" class="hidden">&#10004;</span>
+            </div>
+
+        </form>
+
+    </div>
+
+    <span style="color:#e41405; font-weight: bold;">
+        <p id="errorMessage"></p>
+    </span>
+
+    <br>
+
+    <div id=hiddenButtonDiv1 class="hiddenButtonDiv">
+		
+		<div style="text-align:left; width:fit-content;" class="card speech-card flex-container">
+			<div class="card-image image-container">
+				<img src="../assets/img/Frederick/frederick-towel.png" alt="Image Description">
+			</div>
+			<div class="card-text">
+				<p>"You're shaping up to be a great galactic coder."</p>
+				<br>
+				<a href="../questions/pan-galactic-gargle-blaster.html" class="btn btn-puzzle z-depth-0 waves-effect">Let's go get a drink.</a>
+			</div>
+		</div>
+    </div>
+
+    <!-- Footer -->
+    <img src="../assets/img/long-footer.png" alt="Image Description" width = 100%>
+
+    <!-- Scripts -->
+    <script src="js/cpd.js"></script>
+</body>
+
+</html>

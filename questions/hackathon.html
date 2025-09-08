@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- prevent caching issue -->
+    <meta http-equiv='cache-control' content='no-cache'>
+    <meta http-equiv='expires' content='0'>
+    <meta http-equiv='pragma' content='no-cache'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- style sheet -->
+    <link rel="stylesheet" href="../assets/css/style.css" media="all">
+
+    <title>Statistics away day</title>
+
+</head>
+
+<body class="grey lighten-4">
+
+    <header>
+        <!-- <img src="assets/img/logo.png" alt="Website Logo"> -->
+        <h1>Statistics away day</h1>
+    </header>
+
+    <!-- Main Content -->
+    <div style="display: flex; justify-content: center !important; display:table-cell; vertical-align:middle; text-align:center" class="card speech-card flex-container">
+        <div class="card-image image-container">
+            <img src="../assets/img/Escape-Room/Hackathon-Poster.png" alt="Image Description" class="center" width = "1000">
+        </div>
+	</div>
+	<div style="text-align:left; width:fit-content;" class="card speech-card flex-container">
+		<div class="card-image image-container">
+            <img src="../assets/img/Frederick/frederick-coffee-and-coding.png" alt="Image Description" width="200">
+        </div>
+
+		<div style="text-align:left; width:fit-content;" class="card-text">	
+			<div class="card-text">
+				<p>"Marvin and Tracy are both powered by artificial intelligence. </p>
+				<p>But how do they work, and what might I have to consider when using AI at work?</p>
+				<p>Where could I find out?"</p>
+			</div>
+		</div>
+	</div>
+	<div style="text-align:right; width:fit-content;" class="card speech-card flex-container">
+		<div class="card-image image-container">
+            <img src="../assets/img//Escape-Room/Alien-with-sign.png" alt="Image Description" width="200">
+        </div>
+
+	</div>
+	<div style="text-align:left; width:fit-content;" class="card speech-card flex-container">
+		<div class="card-image image-container">
+            <img src="../assets/img/Frederick/frederick-coffee-and-coding.png" alt="Image Description" width="200">
+        </div>
+
+		<div style="text-align:left; width:fit-content;" class="card-text">	
+			<div class="card-text">
+				<p>"Of course! I could use my Datacamp subscription, </p>
+				<p> assuming I can get online with DSNWifi."</p>
+				<p>Let's answer the questions below using the information at: </p>
+				<p><a href=https://app.datacamp.com/learn/courses?topics=16>https://app.datacamp.com/learn/courses?topics=16></a>".</p>
+			</div>
+		</div>
+	</div>
+	
+	<div class="card" style="width:fit-content;">
+        <h2>What are the missing words?</h2>
+		<p>Enter the correct letter in the boxes.</p>
+		<form id="myForm">
+            <div class="form-group">
+                <p> Which of these isn’t a chapter in the Understanding Artificial Intelligence course?</p>
+				<ol type="A">
+				  <li>What is Artificial Intelligence?</li>
+				  <li>Tasks AI can solve</li>
+				  <li>The human side of AI</li>
+				  <li>Using AI in the workplace</li>
+				</ol>
+                <input type="text" class="input-field" id="field1" name="field1" required>
+                <button type="button" class="btn" id="checkBtn1">Check</button>
+                <span id="tick1" style="color: #09f73c; font-size: 1.5em;" class="hidden">&#10004;</span>
+            </div>
+
+            <div class="form-group">
+                When was the AI ethics course last updated? 
+				<ol type="A">
+				  <li>March</li>
+				  <li>June</li>
+				  <li>July</li>
+				  <li>August</li>
+				</ol>
+                <input type="text" class="input-field" id="field2" name="field2" required>
+                <button type="button" class="btn" id="checkBtn2">Check</button>
+                <span id="tick2" style="color: #09f73c; font-size: 1.5em;" class="hidden">&#10004;</span>
+            </div>
+
+            <div class="form-group">
+                Which conceptual framework is covered in the Introduction to AI Agents course? 
+				<ol type="A">
+				  <li>Thought-Action-Observation</li>
+				  <li>Situation-Behaviour-Impact</li>
+				  <li>Perceive-Interpret-Respond</li>
+				  <li>Event-Reflection-Learning</li>
+				</ol>
+                <input type="text" class="input-field" id="field3" name="field3" required>
+                <button type="button" class="btn" id="checkBtn3">Check</button>
+                <span id="tick3" style="color: #09f73c; font-size: 1.5em;" class="hidden">&#10004;</span>
+            </div>
+
+            <div class="form-group">
+                Who is the presenter for Generative AI Concepts? 
+				<ol type="A">
+				  <li>Ian Knowles</li>
+				  <li>Daniel Tedesco</li>
+				  <li>Vidhi Chugh</li>
+				  <li>Carl Rosseel</li>
+				</ol>
+                <input type="text" class="input-field" id="field4" name="field4" required>
+                <button type="button" class="btn" id="checkBtn4">Check</button>
+                <span id="tick4" style="color: #09f73c; font-size: 1.5em;" class="hidden">&#10004;</span>
+            </div>
+
+        </form>
+
+    </div>
+
+    <span style="color:#e41405; font-weight: bold;">
+        <p id="errorMessage"></p>
+    </span>
+
+    <div id=hiddenButtonDiv class="hiddenButtonDiv">
+		
+		<div style="text-align:left; width:fit-content;" class="card speech-card flex-container">
+			<div class="card-image image-container">
+				<img src="../assets/img/Frederick/frederick-coffee-and-coding.png" alt="Image Description">
+			</div>
+			<div class="card-text">
+				<p>"You're going to top the leader board at this rate!</p>
+				<p>Let's see who won the hackathon."</p>
+				<br>
+				<a href="../questions/towel.html" class="btn btn-puzzle z-depth-0 waves-effect">Hackathon Results</a>
+			</div>
+		</div>
+    </div>
+
+    <!-- Footer -->
+    <img src="../assets/img/long-footer.png" alt="Image Description" width = 100%>
+
+    <!-- Scripts -->
+    <script src="js/hackathon.js"></script>
+</body>
+
+</html>

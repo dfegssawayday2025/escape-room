@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- prevent caching issue -->
+    <meta http-equiv='cache-control' content='no-cache'>
+    <meta http-equiv='expires' content='0'>
+    <meta http-equiv='pragma' content='no-cache'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- style sheet -->
+    <link rel="stylesheet" href="../assets/css/style.css" media="all">
+
+    <title>Statistics away day</title>
+
+</head>
+
+<body class="grey lighten-4">
+
+    <header>
+        <!-- <img src="assets/img/logo.png" alt="Website Logo"> -->
+        <h1>Statistics away day</h1>
+    </header>
+
+    <!-- Main Content -->
+    <div style="display: flex; justify-content: center !important; display:table-cell; vertical-align:middle; text-align:center" class="card speech-card flex-container">
+        <div class="card-image image-container">
+            <img src="../assets/img/Escape-Room/shop.png" alt="Image Description" class="center" width = "1000">
+        </div>
+	</div>
+	<br>
+	<div style="text-align:left; width:fit-content;" class="card speech-card flex-container">
+		<div class="card-image image-container">
+            <img src="../assets/img/Frederick/Space-Frederick.png" alt="Image Description" width="200">
+        </div>
+        <div class="card-text">
+            <p>"Hello. I'm looking for a space suit that will fit me."</p>
+        </div>
+    </div>
+	
+	<div style="text-align:right; width:fit-content;" class="card speech-card flex-container">
+        <div class="card-text">
+            <p>"They're over there - you might fit a Menoptra one."<p>
+			<p>"Sorry I can't help you look, I need to analyse this report for my boss by tonight,</p>
+			<p>but the Sirius Cybernetics graphing software has given me 4 possible charts, </p>
+			<p>and I don't know which one is correct."</p>
+        </div>
+		<div class="card-image image-container">
+            <img src="../assets/img/Escape-Room/Alien.png" alt="Image Description" width="200">
+        </div>
+    </div>
+	<div style="text-align:left; width:fit-content;" class="card speech-card flex-container">
+		<div class="card-image image-container">
+            <img src="../assets/img/Frederick/Space-Frederick.png" alt="Image Description" width="200">
+        </div>
+        <div class="card-text">
+            <p>Let's open <span class="action-highlight">envelope 1</span> to help them identify the correct graph.</p>
+        </div>
+    </div>
+
+
+    <br>
+
+    <div class="card" style="width:fit-content;">
+        <h2>Which graph is the correct graph?  A, B, C or D:</h2>
+        <form id="myForm">
+            <div class="form-group">
+                <input type="text" class="input-field" id="field1" name="field1" required>
+                <button type="button" class="btn" id="checkBtn1">Check</button>
+                <span id="tick1" style="color: #09f73c; font-size: 1.5em;" class="hidden">&#10004;</span>
+            </div>
+
+        </form>
+
+    </div>
+
+    <span style="color:#e41405; font-weight: bold;">
+        <p id="errorMessage"></p>
+    </span>
+
+    <br>
+
+    <div id=hiddenButtonDiv1 class="hiddenButtonDiv">
+		<div style="text-align:right; width:fit-content;" class="card speech-card flex-container">
+			<div class="card-text">
+				<p>"Thanks for your help, but I've still got a huge problem - my boss is part Zenomorph,<p>
+				<p>and colour blind, and if he can't read the graph properly he'll be very annoyed."</p>
+			</div>
+			<div class="card-image image-container">
+				<img src="../assets/img/Escape-Room/Alien.png" alt="Image Description" width="200">
+			</div>
+		</div>
+		
+		<div style="text-align:left; width:fit-content;" class="card speech-card flex-container">
+			<div class="card-image image-container">
+				<img src="../assets/img/Frederick/Space-Frederick.png" alt="Image Description" width="200">
+			</div>
+			<div class="card-text">
+				<p>"I think you need the afcharts package for R:</p>
+				<p>it uses the Government Analysis Function accessible colour palette by default.</p>
+				<p>You can find them here: <a href = "https://analysisfunction.civilservice.gov.uk/policy-store/data-visualisation-colours-in-charts/">Government Analysis Function Guidance</a></p>
+			</div>
+		</div>
+		
+		<div style="text-align:right; width:fit-content;" class="card speech-card flex-container">
+			<div class="card-text">
+				<p>"Thank you! The future's bright the future's..."</p>
+			</div>
+			<div class="card-image image-container">
+				<img src="../assets/img/Escape-Room/Alien.png" alt="Image Description" width="200">
+			</div>
+		</div>
+		
+		<div style="text-align:left; width:fit-content;" class="card speech-card flex-container">
+			<div class="card-image image-container">
+				<img src="../assets/img/Frederick/Space-Frederick.png" alt="Image Description" width="200">
+			</div>
+			<div class="card-text">
+				<p>"Dark blue I think."</p>
+			</div>
+		</div>
+		
+		<div style="text-align:left; width:fit-content;"  class="card">
+			<h2>What is the hex code for dark blue?</h2>
+			<p>Please enter the hexcode including the hash.</p>
+			<form id="myForm">
+				<div class="form-group">
+					<input type="text" class="input-field" id="field2" name="field2" required>
+					<button type="button" class="btn" id="checkBtn2">Check</button>
+					<span id="tick2" style="color: #09f73c; font-size: 1.5em;" class="hidden">&#10004;</span>
+				</div>
+
+			</form>
+
+		</div>
+
+		<span style="color:#e41405; font-weight: bold;">
+			<p id="errorMessage2"></p>
+		</span>
+
+		
+		<div id=hiddenButtonDiv2 class="hiddenButtonDiv">
+		
+			<div style="text-align:left; width:fit-content;" class="card speech-card flex-container">
+				<div class="card-image image-container">
+					<img src="../assets/img/Frederick/space-suit-frederick.png" alt="Image Description">
+				</div>
+				<div class="card-text">
+					<p>I've got my space suit at last. Now I need to get on board the space ship.</p>
+					<br>
+					<a href="../questions/departing.html" class="btn btn-puzzle z-depth-0 waves-effect">Depart</a>
+				</div>
+			</div>
+	    </div>
+    </div>
+
+    <!-- Footer -->
+    <img src="../assets/img/long-footer.png" alt="Image Description" width = 100%>
+
+    <!-- Scripts -->
+    <script src="js/shop-part-1.js"></script>
+</body>
+
+</html>

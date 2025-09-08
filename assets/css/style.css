@@ -61,9 +61,6 @@ footer {
     background-color: #f0f0f0;
 }
 
-img {
-    width: 100%;
-}
 
 .card {
     background-color: #fff;
@@ -72,10 +69,6 @@ img {
     padding: 20px;
     margin: 10px;
     width: auto;
-}
-
-.card img {
-    width: 100%;
 }
 
 h2 {
@@ -93,7 +86,6 @@ h2 {
 .card-image {
     flex: 0 0 30%;
     padding: 1px;
-    width: 100%;
 }
 
 .card-text {
@@ -190,8 +182,7 @@ label {
 }
 
 .image-container {
-    flex: 0 0 20%;
-    max-height: 100%;
+    flex: 0 0 5%;
 }
 
 .email-container {
