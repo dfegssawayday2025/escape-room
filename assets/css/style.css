@@ -71,6 +71,10 @@ footer {
     width: auto;
 }
 
+.card img {
+    width: 100%;
+}
+
 h2 {
     margin-top: 0;
 }
@@ -86,6 +90,7 @@ h2 {
 .card-image {
     flex: 0 0 30%;
     padding: 1px;
+    width: 100%;
 }
 
 .card-text {
@@ -182,7 +187,8 @@ label {
 }
 
 .image-container {
-    flex: 0 0 5%;
+    flex: 0 0 20%;
+    max-height: 100%;
 }
 
 .email-container {
