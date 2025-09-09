@@ -33,5 +33,4 @@ function validateField(field) {
   // Check if all fields are valid and enable div 
   const hiddenButtonDiv1 = document.getElementById('hiddenButtonDiv1'); 
   hiddenButtonDiv1.style.display = field1Valid ? 'block' : 'none';
-
 }
