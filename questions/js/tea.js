@@ -28,7 +28,7 @@ function areEqual(array1, array2) {
 function validateField(field) {
   errorMessage.textContent = ''; // Clear any previous error message
 
-  const expectedValue = "Test file security, identify, reliability, testing, robust, tests, environment, modular ";
+  const expectedValue = "Pillar, methodology, trust, analysts, high, assurance, reproducible, audit ";
   
   // Convert both user input and expected value to lowercase and trim whitespace
   const lowerCaseInput = field.value.toLowerCase().trim();
